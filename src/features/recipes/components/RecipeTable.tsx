@@ -55,7 +55,7 @@ export function RecipeTable() {
         return (
             <div className="w-full h-96 flex flex-col items-center justify-center text-muted-foreground space-y-4">
                 <Utensils className="w-12 h-12 opacity-20" />
-                <p>No recipes found matching your criteria.</p>
+                <p>{t('common.noRecipes')}</p>
             </div>
         );
     }
@@ -130,7 +130,7 @@ export function RecipeTable() {
             {totalPages > 1 && (
                 <div className="flex items-center justify-between border-t border-border pt-4">
                     <span className="text-xs text-muted-foreground">
-                        Showing <span className="font-medium">{startIndex + 1}</span> to <span className="font-medium">{Math.min(startIndex + ITEMS_PER_PAGE, filteredRecipes.length)}</span> of <span className="font-medium">{filteredRecipes.length}</span> entries
+                        {t('common.showing')} <span className="font-medium">{startIndex + 1}</span> {t('common.to')} <span className="font-medium">{Math.min(startIndex + ITEMS_PER_PAGE, filteredRecipes.length)}</span> {t('common.of')} <span className="font-medium">{filteredRecipes.length}</span> {t('common.entries')}
                     </span>
 
                     <div className="flex items-center gap-2">
@@ -139,14 +139,14 @@ export function RecipeTable() {
                             disabled={currentPage === 1}
                             className="px-3 py-1.5 rounded-md border border-border bg-card text-sm font-medium hover:bg-secondary disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                         >
-                            Previous
+                            {t('common.previous')}
                         </button>
                         <button
                             onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                             disabled={currentPage === totalPages}
                             className="px-3 py-1.5 rounded-md border border-border bg-card text-sm font-medium hover:bg-secondary disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                         >
-                            Next
+                            {t('common.next')}
                         </button>
                     </div>
                 </div>
