@@ -55,7 +55,7 @@ export function Sidebar({ className }: { className?: string }) {
             <div className="p-4 mt-auto border-t border-border">
                 <div className="p-4 rounded-lg bg-secondary/50 border border-border">
                     <p className="text-xs text-muted-foreground leading-relaxed">
-                        Professional Recipe Management System v1.0
+                        System v1.0
                     </p>
                 </div>
             </div>
