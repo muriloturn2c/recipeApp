@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Recipe SPA - Premium Experience
 
-## Getting Started
+A spectacular Single Page Application (SPA) built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This application allows users to browse, search, and filter recipes with a premium, responsive user interface.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Recipe Browser:** Interactive table with sortable columns and rich media.
+- **Advanced Filtering:** Filter recipes by difficulty (Easy, Medium, Hard) via a dynamic Sidebar.
+- **Search:** Real-time search functionality.
+- **Detailed Views:** Comprehensive recipe pages with ingredients, step-by-step instructions, and ratings.
+- **Internationalization:** Full support for English and Spanish (EN/ES).
+- **Responsive Design:** Fully adaptive layout with mobile-optimized navigation.
+- **Premium Aesthetics:** Glassmorphism design system, smooth animations, and modern typography.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js 15+](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4, Lucide React (Icons), CSS Variables
+- **State Management:** React Context API
+- **Networking:** Axios
+- **Font:** Outfit (Google Fonts)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd recipe-web
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open the application:**
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## 🏗️ Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project follows **SOLID** principles and a feature-based architecture:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app`: App Router pages and layouts.
+- `src/components`: Reusable UI atoms and layout organisms.
+- `src/features`: Feature-specific logic (Services, Components) for scalability.
+- `src/context`: Global state management (RecipeContext, LanguageContext).
+- `src/utils`: Utilities and translations.
+
+## 📝 Decisions & Trade-offs
+
+- **Client-Side Filtering:** We fetch all recipes (`limit=0`) initially. This allows for instant, lag-free filtering and searching on the client side, providing a superior UX compared to server-roundtrips for small datasets (< 1000 items).
+- **Context API vs Redux:** Given the moderate complexity, Context API was chosen to avoid Redux boilerplate while maintaining clean state separation.
+- **Tailwind v4:** Utilized the latest Tailwind features for a specialized CSS-variable based theme system.
