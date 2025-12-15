@@ -3,12 +3,15 @@ export type Language = 'en' | 'es';
 export const translations = {
     en: {
         common: {
-            searchPlaceholder: 'Search recipes...',
+            back: 'Back to recipes',
+            error: 'Something went wrong. Please try again later.',
             title: 'RecipeApp',
+            login: 'Login',
+            searchPlaceholder: 'Search recipes...',
+            databaseTitle: 'Global Recipe Database',
+            databaseDesc: 'Select a category from the sidebar or search to find technical preparation guides.',
             footer: '© RecipeApp. All rights reserved.',
             loading: 'Loading...',
-            error: 'An error occurred',
-            back: 'Back to recipes',
         },
         filters: {
             difficulty: 'Difficulty',
@@ -20,11 +23,12 @@ export const translations = {
         recipe: {
             ingredients: 'Ingredients',
             instructions: 'Instructions',
-            prepTime: 'Prep Time',
-            cookTime: 'Cook Time',
-            servings: 'Servings',
-            cuisine: 'Cuisine',
             minutes: 'min',
+            cuisine: 'Cuisine',
+            prepTime: 'Prep',
+            cookTime: 'Cook',
+            servings: 'Servings',
+            name: 'Recipe',
             rating: 'Rating',
         },
         difficulty: {
@@ -35,12 +39,15 @@ export const translations = {
     },
     es: {
         common: {
+            back: 'Volver a recetas',
+            error: 'Algo salió mal. Por favor, inténtelo de nuevo más tarde.',
+            title: 'RecipeApp',
+            login: 'Iniciar Sesión',
             searchPlaceholder: 'Buscar recetas...',
-            title: 'RecetasApp',
+            databaseTitle: 'Base de Datos Global de Recetas',
+            databaseDesc: 'Seleccione una categoría de la barra lateral o busque para encontrar guías técnicas de preparación.',
             footer: '© RecipeApp. Todos los derechos reservados.',
             loading: 'Cargando...',
-            error: 'Ocurrió un error',
-            back: 'Volver a la lista',
         },
         filters: {
             difficulty: 'Dificultad',
@@ -52,11 +59,12 @@ export const translations = {
         recipe: {
             ingredients: 'Ingredientes',
             instructions: 'Instrucciones',
-            prepTime: 'Tiempo Prep',
-            cookTime: 'Tiempo Cocción',
-            servings: 'Porciones',
-            cuisine: 'Cocina',
             minutes: 'min',
+            cuisine: 'Cocina',
+            prepTime: 'Prep',
+            cookTime: 'Cocción',
+            servings: 'Porciones',
+            name: 'Receta',
             rating: 'Valoración',
         },
         difficulty: {

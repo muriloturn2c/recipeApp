@@ -67,7 +67,7 @@ export function RecipeTable() {
                     <table className="w-full text-left border-collapse">
                         <thead>
                             <tr className="border-b border-border bg-slate-50 dark:bg-slate-900/50">
-                                <th className="p-4 font-semibold text-muted-foreground text-xs uppercase tracking-wider">{t('recipe.ingredients')}Name</th>
+                                <th className="p-4 font-semibold text-muted-foreground text-xs uppercase tracking-wider">{t('recipe.name')}</th>
                                 <th className="p-4 font-semibold text-muted-foreground text-xs uppercase tracking-wider hidden md:table-cell">{t('recipe.cuisine')}</th>
                                 <th className="p-4 font-semibold text-muted-foreground text-xs uppercase tracking-wider hidden sm:table-cell">{t('recipe.prepTime')}</th>
                                 <th className="p-4 font-semibold text-muted-foreground text-xs uppercase tracking-wider hidden sm:table-cell">{t('recipe.cookTime')}</th>
