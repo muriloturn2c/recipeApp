@@ -1,6 +1,11 @@
-# Recipe SPA - Premium Experience
+# RecipeApp
 
-A spectacular Single Page Application (SPA) built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This application allows users to browse, search, and filter recipes with a premium, responsive user interface.
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8)](https://tailwindcss.com/)
+[![Storybook](https://img.shields.io/badge/Storybook-Enabled-ff4785)](https://storybook.js.org/)
+
+Single Page Application (SPA) built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This application allows users to browse, search, and filter recipes with a premium, responsive "Financial Dashboard" aesthetic.
 
 ## 🚀 Features
 
@@ -41,6 +46,22 @@ A spectacular Single Page Application (SPA) built with **Next.js**, **TypeScript
 
 4. **Open the application:**
    Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🧪 Verification & Testing
+
+The project is equipped with **Jest** and **React Testing Library**.
+
+### Unit Tests
+To run the test suite:
+```bash
+npm test
+```
+
+### Component Documentation (Storybook)
+We use Storybook to document and visually test components in isolation.
+```bash
+npm run storybook
+```
 
 ## 🏗️ Architecture
 
